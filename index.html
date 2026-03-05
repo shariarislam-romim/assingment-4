@@ -32,7 +32,7 @@
             </div>
         </div>
     </header>
-    <hr class="border-[1px] opacity-5">
+    <hr class="border opacity-5">
 
     <section>
         <div class="flex justify-between mt-3 mb-5">
@@ -41,9 +41,21 @@
         </div>
 
         <div class="flex flex-wrap mb-5 gap-2">
-            <button class="btn px-5 py-2 text-sm border-2 rounded-sm cursor-pointer transition-all font-medium">All</button>
-            <button class="btn px-5 py-2 text-sm border-2 rounded-sm cursor-pointer transition-all font-medium">Interview</button>
-            <button class="btn px-5 py-2 text-sm border-2 rounded-sm cursor-pointer transition-all font-medium">Rejected</button>
+            <button
+             onclick="switchTab('all')" id="tab-all"
+             class="btn px-5 py-2 text-sm border-2 rounded-sm cursor-pointer transition-all font-medium">
+                All
+            </button>
+            <button
+             onclick="switchTab('interview')" id="tab-interview" 
+             class="btn px-5 py-2 text-sm border-2 rounded-sm cursor-pointer transition-all font-medium">
+                Interview
+            </button>
+            <button
+             onclick="switchTab('rejected')" id="tab-rejected"  
+            class="btn px-5 py-2 text-sm border-2 rounded-sm cursor-pointer transition-all font-medium">
+                Rejected
+            </button>
             </div>
 
             <div class="my-5 flex flex-col gap-7">
@@ -229,9 +241,10 @@
         
 
     </section>
+
+
     </section>
 
-    
-    
+    <script src="./index.js"></script>
 </body>
 </html>
